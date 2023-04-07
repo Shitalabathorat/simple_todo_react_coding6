@@ -1,19 +1,21 @@
-// Write your code here
-import './index.css'
+
+import '.index.css'
+
+//import todoList from './components/SimpleTodos'
 
 const TodoItem = props => {
-  const {listDetails, deleteUser} = props
-  const {title, id} = listDetails
-  const onDelete = () => {
-    deleteUser(id)
+  const {todoDetails, deleteUser} = props
+  const {title, id} = todoDetails
+
+  const onDelete () => {
+     deleteUser(id)
   }
+
   return (
     <li className="user-card-container">
-      <p className="para">{title}</p>
-      <button type="button" onClick={onDelete} className="delete-button">
-        Delete
-      </button>
+      <h2>{title}</h2>
+      <button type="button" className="btn" onClick={onDelete}>Delete</button>
     </li>
   )
 }
-export default TodoItem
+export default DestinationItem
