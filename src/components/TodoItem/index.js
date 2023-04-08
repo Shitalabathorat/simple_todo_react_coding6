@@ -18,7 +18,7 @@ const TodoItem = props => {
     </li>
   )
 }
-export default DestinationItem
+export default todoItem
 
 import './index.css'
 
