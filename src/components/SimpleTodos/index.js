@@ -1,4 +1,6 @@
-import {component} from 'react'
+
+
+import {Component} from 'react'
 
 import TodoItem from '../TodoItem'
 
@@ -38,16 +40,13 @@ const initialTodosList = [
     title: 'Get essentials for Sunday car wash',
   },
 ]
-// Write your code
-  
-            
+
 class SimpleTodos extends Component {
   state = {
     todosList: initialTodosList,
   }
 
-  const deleteTodo = id => {
-      
+  deleteTodo = id => {
     const {todosList} = this.state
     const updatedTodosList = todosList.filter(eachTodo => eachTodo.id !== id)
 
@@ -78,4 +77,4 @@ class SimpleTodos extends Component {
   }
 }
 
-export default SimpleTodos;
+export default SimpleTodos
